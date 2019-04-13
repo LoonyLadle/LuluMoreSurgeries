@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Lulu's Animal Cybernetics</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+      <value>
+        <li>LuluMoreBionics_InstallAllnighter</li>
+        <li>LuluMoreBionics_InstallBionicKidney</li>
+        <li>LuluMoreBionics_InstallBionicLiver</li>
+        <li>LuluMoreBionics_InstallBionicLung</li>
+        <li>LuluMoreBionics_InstallSubdermalArmor</li>
+        <li>LuluMoreSurgeries_InstallBoneReplacement</li>
+        <li>LuluMoreSurgeries_InstallHookHand</li>
+        <li>LuluMoreSurgeries_RemoveScar</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

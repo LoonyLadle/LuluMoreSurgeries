@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Defs>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LuluMoreSurgeries_BoneReplacement</defName>
+    <label>bone replacement</label>
+    <labelNoun>a bone replacement</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <spawnThingOnRemoved>Plasteel</spawnThingOnRemoved>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>LuluMoreSurgeries_InstallBoneReplacement</defName>
+    <label>replace bone</label>
+    <description>Replace a bone.</description>
+    <workerClass>LoonyLadle.MoreSurgeries.Recipe_ReplaceBone</workerClass>
+    <jobString>Replacing bone.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>LuluMoreSurgeries_BoneReplacement</addsHediff>
+  </RecipeDef>
+</Defs>

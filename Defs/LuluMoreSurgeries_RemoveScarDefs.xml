@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Defs>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>LuluMoreSurgeries_RemoveScar</defName>
+    <label>remove scar</label>
+    <description>Remove a scar.</description>
+    <workerClass>LoonyLadle.MoreSurgeries.Recipe_RemoveScar</workerClass>
+    <jobString>Removing scar.</jobString>
+    <workAmount>2000</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineUltratech</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

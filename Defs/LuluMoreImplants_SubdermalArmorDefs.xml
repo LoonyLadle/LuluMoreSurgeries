@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="ImplantBase">
     <defName>LuluMoreBionics_SubdermalArmor</defName>
-    <label>subcutaneous armor</label>
+    <label>subdermal armor</label>
     <description>Subcutaneous body armor consisting of small plates of flexible armor implanted under the skin. Provides modest but body-wide protection. A lattice-dust healing system allows it to recover from damage.</description>
     <graphicData>
       <texPath>Things/Item/Health/HealthItemBionic</texPath>
@@ -23,8 +23,8 @@
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>LuluMoreBionics_SubdermalArmor</defName>
-    <label>subcutaneous armor</label>
-    <labelNoun>subcutaneous armor</labelNoun>
+    <label>subdermal armor</label>
+    <labelNoun>subdermal armor</labelNoun>
     <stages>
       <li>
         <statOffsets>
@@ -39,10 +39,10 @@
 
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>LuluMoreBionics_InstallSubdermalArmor</defName>
-    <label>install subcutaneous armor</label>
-    <description>Install subcutaneous armor.</description>
+    <label>install subdermal armor</label>
+    <description>Install subdermal armor.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
-    <jobString>Installing subcutaneous armor.</jobString>
+    <jobString>Installing subdermal armor.</jobString>
     <workAmount>7400</workAmount>
     <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
     <skillRequirements>

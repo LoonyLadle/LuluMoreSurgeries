@@ -23,12 +23,12 @@
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>LuluMoreBionics_Allnighter</defName>
-    <label>subdermal armor</label>
-    <labelNoun>subdermal armor</labelNoun>
+    <label>allnighter</label>
+    <labelNoun>allnighter</labelNoun>
     <stages>
       <li>
         <partEfficiencyOffset>-0.2</partEfficiencyOffset>
-        <restFallFactor>0.2</restFallFactor>
+        <restFallFactor>0.33</restFallFactor>
       </li>
     </stages>
     <spawnThingOnRemoved>LuluMoreBionics_Allnighter</spawnThingOnRemoved>

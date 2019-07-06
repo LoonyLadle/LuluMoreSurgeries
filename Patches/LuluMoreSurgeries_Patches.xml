@@ -5,11 +5,9 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
         <value>
-          <li>LuluMoreBionics_InstallAllnighter</li>
           <li>LuluMoreBionics_InstallBionicKidney</li>
           <li>LuluMoreBionics_InstallBionicLiver</li>
           <li>LuluMoreBionics_InstallBionicLung</li>
-          <li>LuluMoreBionics_InstallSubdermalArmor</li>
           <li>LuluMoreSurgeries_InstallBoneReplacement</li>
           <li>LuluMoreSurgeries_InstallCosmeticReplacement</li>
           <li>LuluMoreSurgeries_InstallHookHand</li>

@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Recipe_ReplaceBone.cs" />
+    <Compile Include="Recipe_InstallBoneReplacement.cs" />
     <Compile Include="Recipe_RemoveScar.cs" />
     <Compile Include="Recipe_InstallCosmeticBodyPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -14,11 +14,11 @@
     <defName>LuluMoreSurgeries_InstallBoneReplacement</defName>
     <label>replace bone</label>
     <description>Replace a bone.</description>
-    <workerClass>LoonyLadle.MoreSurgeries.Recipe_ReplaceBone</workerClass>
+    <workerClass>LoonyLadle.MoreSurgeries.Recipe_InstallBoneReplacement</workerClass>
     <jobString>Replacing bone.</jobString>
-    <workAmount>3000</workAmount>
+    <workAmount>2000</workAmount>
     <skillRequirements>
-      <Medicine>5</Medicine>
+      <Medicine>3</Medicine>
     </skillRequirements>
     <ingredients>
       <li>
@@ -27,7 +27,7 @@
             <li>Medicine</li>
           </categories>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>

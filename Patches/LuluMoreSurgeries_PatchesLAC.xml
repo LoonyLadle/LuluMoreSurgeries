@@ -7,11 +7,7 @@
     <match Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
       <value>
-        <li>LuluMoreBionics_InstallBionicKidney</li>
-        <li>LuluMoreBionics_InstallBionicLiver</li>
-        <li>LuluMoreBionics_InstallBionicLung</li>
         <li>LuluMoreSurgeries_InstallBoneReplacement</li>
-        <li>LuluMoreSurgeries_InstallHookHand</li>
         <li>LuluMoreSurgeries_RemoveScar</li>
       </value>
     </match>

@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 #pragma warning disable IDE1006 // Naming Styles
@@ -10,23 +11,19 @@ namespace LoonyLadle.MoreSurgeries
     {
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {
-            // Check all of our hediffs for damage.
-            foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+            foreach (BodyPartRecord part in MoreSurgeriesHelper.GetPartsPossibleToApplyOn(pawn, recipe))
             {
-                // Sanity check!
-                if (hediff.Part == null)
+                if (part.def.canSuggestAmputation && part.def.IsSolid(part, pawn.health.hediffSet.hediffs))
                 {
-                    continue;
-                }
-
-                // Is the hediff a missing part visible on a natural solid body part that can be amputated?
-                if (hediff is Hediff_MissingPart && hediff.Visible && !pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(hediff.Part) && hediff.Part.def.canSuggestAmputation && hediff.Part.def.IsSolid(hediff.Part, hediff.pawn.health.hediffSet.hediffs))
-                {
-                    // It is, so yield the damaged part.
-                    yield return hediff.Part;
+                    foreach (Hediff hediff in pawn.health.hediffSet.hediffs.Where(x => x.Part == part))
+                    {
+                        if (hediff is Hediff_MissingPart)
+                        {
+                            yield return part;
+                        }
+                    }
                 }
             }
-            // We're done.
             yield break;
         }
     }

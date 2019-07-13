@@ -18,7 +18,7 @@
     <jobString>Replacing bone.</jobString>
     <workAmount>2000</workAmount>
     <skillRequirements>
-      <Medicine>3</Medicine>
+      <Medicine>5</Medicine>
     </skillRequirements>
     <ingredients>
       <li>

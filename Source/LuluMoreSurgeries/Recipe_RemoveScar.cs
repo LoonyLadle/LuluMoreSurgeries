@@ -6,24 +6,23 @@ using Verse;
 
 namespace LoonyLadle.MoreSurgeries
 {
-    public class Recipe_RemoveScar : Recipe_Surgery
+    public class Recipe_RemoveScar : Recipe_RemoveHediff
     {
         // Is the hediff a permanent injury visible on a skin-covered body part?
-        public bool IsRemovableHediff(Hediff hediff) => hediff is Hediff_Injury && hediff.IsPermanent() && hediff.Visible && (hediff.Part?.def.IsSkinCovered(hediff.Part, hediff.pawn.health.hediffSet) ?? false);
+        public bool IsRemovableHediff(Hediff diff) => diff is Hediff_Injury && diff.IsPermanent() && diff.Visible && (diff.Part?.def.IsSkinCovered(diff.Part, diff.pawn.health.hediffSet) ?? false);
 
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {
-            // Check all of our hediffs for scars.
-            foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+            foreach (Hediff diff in pawn.health.hediffSet.hediffs)
             {
-                // Is the hediff a permanent injury visible on a skin-covered body part?
-                if (IsRemovableHediff(hediff))
+                if (diff.Part != null)
                 {
-                    // It is, so yield the scarred part.
-                    yield return hediff.Part;
+                    if (IsRemovableHediff(diff))
+                    {
+                        yield return diff.Part;
+                    }
                 }
             }
-            // We're done.
             yield break;
         }
 
@@ -52,8 +51,7 @@ namespace LoonyLadle.MoreSurgeries
                     }
                     else
                     {
-                        // The null check here is a little bit hacky and shouldn't even be necessary, but if it *really* wasn't necessary than the base ApplyOnPawn wouldn't have a null check either... right?
-                        text = "MessageSuccessfullyRemovedHediff".Translate(billDoer.LabelShort, pawn.LabelShort, (hediff?.LabelBase ?? part.LabelShort).Named("HEDIFF"), billDoer.Named("SURGEON"), pawn.Named("PATIENT"));
+                        text = "MessageSuccessfullyRemovedHediff".Translate(billDoer.LabelShort, pawn.LabelShort, hediff.Named("HEDIFF"), billDoer.Named("SURGEON"), pawn.Named("PATIENT"));
                     }
                     Messages.Message(text, pawn, MessageTypeDefOf.PositiveEvent, true);
                 }

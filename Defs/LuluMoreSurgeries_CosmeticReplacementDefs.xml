@@ -20,8 +20,8 @@
     <workAmount>2000</workAmount>
     <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
     <skillRequirements>
-      <Medicine>2</Medicine>
-      <Artistic>3</Artistic>
+      <Medicine>3</Medicine>
+      <Artistic>5</Artistic>
     </skillRequirements>
     <ingredients>
       <li>

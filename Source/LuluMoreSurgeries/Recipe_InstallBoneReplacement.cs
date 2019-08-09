@@ -11,7 +11,7 @@ namespace LoonyLadle.MoreSurgeries
     {
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {
-            foreach (BodyPartRecord part in MoreSurgeriesHelper.GetPartsPossibleToApplyOn(pawn, recipe))
+            foreach (BodyPartRecord part in MoreSurgeriesHelper.GetPartsPossibleToInstallArtificialPart(pawn, recipe))
             {
                 if (part.def.canSuggestAmputation && part.def.IsSolid(part, pawn.health.hediffSet.hediffs))
                 {

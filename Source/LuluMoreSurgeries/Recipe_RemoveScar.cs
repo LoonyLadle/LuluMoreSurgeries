@@ -51,7 +51,7 @@ namespace LoonyLadle.MoreSurgeries
                     }
                     else
                     {
-                        text = "MessageSuccessfullyRemovedHediff".Translate(billDoer.LabelShort, pawn.LabelShort, hediff.Named("HEDIFF"), billDoer.Named("SURGEON"), pawn.Named("PATIENT"));
+                        text = "MessageSuccessfullyRemovedHediff".Translate(billDoer.LabelShort, pawn.LabelShort, hediff.LabelBase.Named("HEDIFF"), billDoer.Named("SURGEON"), pawn.Named("PATIENT"));
                     }
                     Messages.Message(text, pawn, MessageTypeDefOf.PositiveEvent, true);
                 }

@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Verse;
 
 #pragma warning disable IDE1006 // Naming Styles
 
 namespace LoonyLadle.MoreSurgeries
 {
-    public static class MoreSurgeriesHelper
+    internal static class MoreSurgeriesHelper
     {
-        public static IEnumerable<BodyPartRecord> GetPartsPossibleToApplyOn(Pawn pawn, RecipeDef recipe)
+        public static IEnumerable<BodyPartRecord> GetPartsPossibleToInstallArtificialPart(Pawn pawn, RecipeDef recipe)
         {
             foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts)
             {

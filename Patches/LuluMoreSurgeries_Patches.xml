@@ -5,7 +5,6 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
         <value>
-          <li>LuluMoreSurgeries_InstallBoneReplacement</li>
           <li>LuluMoreSurgeries_InstallCosmeticReplacement</li>
           <li>LuluMoreSurgeries_RemoveScar</li>
         </value>

@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Defs>
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>LuluMoreSurgeries_CosmeticReplacement</defName>
-    <label>cosmetic replacement</label>
-    <labelNoun>a cosmetic replacement</labelNoun>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>LuluMoreSurgeries_CosmeticReplacement</defName>
+		<label>cosmetic replacement</label>
+		<labelNoun>a cosmetic replacement</labelNoun>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
 
-  <RecipeDef ParentName="SurgeryFlesh">
-    <defName>LuluMoreSurgeries_InstallCosmeticReplacement</defName>
-    <label>install cosmetic replacement</label>
-    <description>Install a cosmetic replacement.</description>
-    <workerClass>LoonyLadle.MoreSurgeries.Recipe_InstallCosmeticBodyPart</workerClass>
-    <jobString>Installing cosmetic replacement.</jobString>
-    <workAmount>2000</workAmount>
-    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
-    <skillRequirements>
-      <Medicine>3</Medicine>
-      <Artistic>5</Artistic>
-    </skillRequirements>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-    </fixedIngredientFilter>
-    <addsHediff>LuluMoreSurgeries_CosmeticReplacement</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>LuluMoreSurgeries_InstallCosmeticReplacement</defName>
+		<label>install cosmetic replacement</label>
+		<description>Install a cosmetic replacement.</description>
+		<workerClass>LoonyLadle.MoreSurgeries.Recipe_InstallCosmeticBodyPart</workerClass>
+		<jobString>Installing cosmetic replacement.</jobString>
+		<workAmount>2000</workAmount>
+		<surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<addsHediff>LuluMoreSurgeries_CosmeticReplacement</addsHediff>
+	</RecipeDef>
 </Defs>

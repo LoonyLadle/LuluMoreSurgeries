@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <ModMetaData>
-  <name>Lulu's More Surgeries</name>
-  <author>LoonyLadle</author>
-  <supportedVersions>
-    <li>1.0</li>
-  </supportedVersions>
-  <description>Adds treatments for permanent injuries; scar removal, and cosmetic replacements.</description>
-  <url>https://ludeon.com/forums/index.php?topic=49129</url>
+	<name>Lulu's More Surgeries</name>
+	<author>LoonyLadle</author>
+	<packageId>LoonyLadle.RimWorld.MoreSurgeries</packageId>
+	<description>Adds treatments for permanent injuries; scar removal, and cosmetic replacements.</description>
+	<url>https://ludeon.com/forums/index.php?topic=49129</url>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies />
+	<loadBefore />
+	<loadAfter />
+	<incompatibleWith />
 </ModMetaData>

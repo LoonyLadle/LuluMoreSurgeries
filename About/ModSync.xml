@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <ModSyncNinjaData>
-  <ID>e6cda6e4-74b4-4a0f-bf60-0d982e719333</ID>
-  <ModName>Lulu's More Surgeries</ModName>
-  <Version>1.5.0</Version>
-  <SaveBreaking>False</SaveBreaking>
-  <Host name="Github">
-    <Owner>LoonyLadle</Owner>
-    <Project>LuluMoreSurgeries</Project>
-    <AboutDir>About</AboutDir>
-    <DownloadFrom>ModSyncMainPage</DownloadFrom>
-    <Branch>master</Branch>
-  </Host>
+	<ID>e6cda6e4-74b4-4a0f-bf60-0d982e719333</ID>
+	<ModName>Lulu's More Surgeries</ModName>
+	<Version>1.6.0</Version>
+	<SaveBreaking>False</SaveBreaking>
+	<Host name="Github">
+		<Owner>LoonyLadle</Owner>
+		<Project>LuluMoreSurgeries</Project>
+		<AboutDir>About</AboutDir>
+		<DownloadFrom>ModSyncMainPage</DownloadFrom>
+		<Branch>master</Branch>
+	</Host>
 </ModSyncNinjaData>

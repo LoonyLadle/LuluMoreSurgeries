@@ -3,6 +3,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>LuluMoreSurgeries_CosmeticReplacement</defName>
 		<label>cosmetic replacement</label>
+		<description>A replacement for a disfigured body part.</description>
 		<labelNoun>a cosmetic replacement</labelNoun>
 		<addedPartProps>
 			<solid>true</solid>

@@ -6,7 +6,7 @@ using Verse;
 
 namespace LoonyLadle.MoreSurgeries
 {
-	public class Recipe_RemoveScar : Recipe_RemoveHediff
+	public class Recipe_RemoveScar : Recipe_Surgery
 	{
 		// Is the hediff a permanent injury visible on a skin-covered body part?
 		public bool IsRemovableHediff(Hediff diff) => diff is Hediff_Injury && diff.IsPermanent() && diff.Visible && (diff.Part?.def.IsSkinCovered(diff.Part, diff.pawn.health.hediffSet) ?? false);

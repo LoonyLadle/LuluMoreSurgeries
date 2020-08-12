@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<loadFolders>
+	<v1.1>
+		<li>/</li>
+		<li>v1.1-backcompatibility</li>
+	</v1.1>
+	<v1.2>
+		<li>/</li>
+	</v1.2>
+</loadFolders>
